@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DoConnect</title>
+  </head>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
+    authDomain: "doctor-connect-5.firebaseapp.com",
+    databaseURL: "https://doctor-connect-5.firebaseio.com",
+    projectId: "doctor-connect-5",
+    storageBucket: "doctor-connect-5.appspot.com",
+    messagingSenderId: "358747977546"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js">
+
+</script>
+<body>
+<div class="logo">
+<img src="images/logo.png" alt="DoConnect Logo"></div>
+<div class="header">
+<h1>DoConnect</h1>
+        
+        <h3>The easiest way to look after yourself!</h3></div>
+		
+		
+<div id="navmenu">
+            <a href="index.html">Home</a>
+            <a href="login.html">Log in</a>
+			<a href="signuo.html">Sign Up</a>
+			<a id="navright" href="contactus.html">Contact</a>
+            
+        </div>
+<div id="input">
+<p>Please input your personal details</p>
+<input type="text" placeholder="Username" id="uname_field">
+<input type="password" placeholder="Password" id="pass_field"><br>
+<input type="text" placeholder="First Name" id="fname_field">
+<input type="text" placeholder="Second Name" id="sname_field"><br>
+<input type="text" placeholder="Phone Number" id="phone_field">
+<input type="text" placeholder="Address" id="address_field"><br>
+<input type="text" placeholder="Town" id="town_field">
+<input type="text" placeholder="Eircode" id="eir_field"><br>
+<button id="submit_btn"onclick="storedata()">Submit</button><br>
+</div>
+<div id="footer">
+     <p>DoConnect</p>
+<div id="col">
+    
+    <p>Designed by:<br><br>Dylan Murphy<br>Piyush Sharma<br>Matt<br>Ben</p>
+    </div>
+  
+ <div id="col">
+      <p>Contact information: <a class="normal" href="mailto:webappgearhost@example.com">
+          webappgearhost@gmail.com</a></br>
+          <a class="normal" href="tel:+123 123456789">123 123456789</a></p>
+ </div>
+    <div id="col">
+<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo" width="30px" height="30px"/> </a>
+ <a href="https://twitter.com/?lang=en"><img src="images/twitter.jpg" alt="twitter logo" width="30px" height="30px"/> </a>
+ <a href="https://ie.linkedin.com/"><img src="images/linkedin.png" alt="linkedin logo" width="30px" height="30px"/> </a>
+ <a href="https://www.instagram.com/?hl=en"><img src="images/instagram.png" alt="instagram logo" width="30px" height="30px"/>  </a>
+    </div>
+</div>
+ 
+  </body>
+</html>
