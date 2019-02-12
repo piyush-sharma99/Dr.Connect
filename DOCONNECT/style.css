@@ -24,29 +24,39 @@ border-left:3px solid black;}
     border-right:3px solid black;
 }
 
-#footer{ 
-text-align: center; 
-color: blue;
-height: 100%;
+#footer{
+text-align: center;
+color: black;
+height: 60px;
 padding-top: 0.75%;
-background-color: white;   
-padding-bottom:50px;    
+
+
+
 }
 
-#col{
-width:32%;
-float:left;	
+.col{
+width:33.33%;
+float:left;
+font-size:15px;
+background-color:#00529F;
+height: 140px;
+
 }
 
 .header{
 text-align:center;
 margin-top:-120px;
-	
-	
+
+
 }
 
-#input{
+#input1{
 	text-align:center;
+	display: none;
+}
+#input2{
+	text-align:center;
+	display: none;
 }
 #input input{
 
@@ -61,6 +71,7 @@ input[type=text] {
   margin-right:5px;
   font-family:'raleway' sans-serif;
   font-size:20px;
+
 }
 
 input[type=password] {
@@ -74,3 +85,11 @@ input[type=password] {
   font-size:20px;
 }
 
+.show{
+	width:100px;
+	font-family:'raleway' sans-serif;
+  font-size:20px;
+text-align: center;
+margin-left: 47%;
+margin-right: 47%;
+}
