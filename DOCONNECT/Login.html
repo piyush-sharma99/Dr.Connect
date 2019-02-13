@@ -44,7 +44,6 @@ if (x.style.display === "none") {
 
   </script>
 
-
   <script src="Login.js"></script>
 
   <body>
@@ -67,11 +66,12 @@ if (x.style.display === "none") {
     <br>
   <button class="show" onclick="toggle1()">Patient Login</button>
 <br>
+
   <div id="input1">
   <p>Please input your Login details</p>
-  <input type="text" placeholder="Patient ID" id="patID_field">
-  <input type="password" placeholder="Password" id="pass_field"><br>
-  <button id="submit_btn"onclick="storedata1()">Login</button><br>
+  <input type="email" placeholder="Email...." id="email_field">
+  <input type="password" placeholder="Password...." id="pass_field"><br>
+  <button id="submit_btn"onclick="login()">Login</button><br>
 </div>
 
 <br>
@@ -82,9 +82,9 @@ if (x.style.display === "none") {
 <br>
   <div id="input2">
   <p>Please input your Login details</p>
-  <input type="text" placeholder="Doctor ID" id="docID_field">
-  <input type="password" placeholder="Password" id="dpass_field"><br>
-  <button id="submit_btn"onclick="storedata2()">Login</button><br>
+  <input type="email" placeholder="Email...." id="demail_field">
+  <input type="password" placeholder="Password...." id="dpass_field"><br>
+  <button onclick="login()">Login</button><br>
   </div>
   <br>
   <br>

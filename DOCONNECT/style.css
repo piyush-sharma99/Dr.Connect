@@ -84,7 +84,20 @@ input[type=text] {
   margin-left:5px;
   margin-right:5px;
   font-family:'raleway' sans-serif;
-  font-size:20px;
+  font-size:15px;
+
+
+}
+input[type=email] {
+  border: 2px solid #00529F;
+  border-radius: 4px;
+  margin-top:15px;
+  margin-bottom:15px;
+  margin-left:5px;
+  margin-right:5px;
+  font-family:'raleway' sans-serif;
+  font-size:15px;
+
 
 }
 
@@ -96,7 +109,8 @@ input[type=password] {
    margin-top:15px;
   margin-bottom:15px;
   font-family:'raleway' sans-serif;
-  font-size:20px;
+  font-size:15px;
+
 }
 
 .show{

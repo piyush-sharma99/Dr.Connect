@@ -1,6 +1,7 @@
 var db = firebase.firestore();
 // storing patient firebase data//
 function storedata1(){
+
 	var inputFname = document.getElementById("fname_field").value;
 	var inputSname = document.getElementById("sname_field").value;
 	var inputAddress = document.getElementById("address_field").value;
@@ -8,8 +9,16 @@ function storedata1(){
 	var inputTown = document.getElementById("town_field").value;
 	var inputEir = document.getElementById("eir_field").value;
 	var inputPatID = document.getElementById("patID_field").value;
-  var inputPass = document.getElementById("pass_field").value;
 
+  var inputPass = document.getElementById("pass_field").value;
+	var inputEmail = document.getElementById("email_field").value;
+
+	firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPass).catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  window.alert("Error : " + errorMessage);
+	});
 
 	db.collection("Patient").doc(inputPatID).set({
   Fname: inputFname,
@@ -18,8 +27,8 @@ function storedata1(){
 	Address: inputAddress,
 	Town: inputTown,
 	Eircode: inputEir,
-	PatID: inputPatID,
-	Password: inputPass
+	PatID: inputPatID
+
 
 
 })
@@ -42,6 +51,14 @@ function storedata2(){
 	var inputEir = document.getElementById("deir_field").value;
 	var inputDocID = document.getElementById("docID_field").value;
   var inputPass = document.getElementById("dpass_field").value;
+	var inputEmail = document.getElementById("demail_field").value;
+
+	firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPass).catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  window.alert("Error : " + errorMessage);
+	});
 
 
 	db.collection("Doctor").doc(inputDocID).set({
@@ -51,8 +68,8 @@ function storedata2(){
 	Address: inputAddress,
 	Town: inputTown,
 	Eircode: inputEir,
-	DocID: inputDocID,
-	Password: inputPass
+	DocID: inputDocID
+
 
 
 })
