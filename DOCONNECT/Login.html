@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sign UP</title>
+<title>Login</title>
   <meta charset="utf-8">
   </head>
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
@@ -45,7 +45,7 @@ if (x.style.display === "none") {
   </script>
 
 
-  <script src="Sign.js"></script>
+  <script src="Login.js"></script>
 
   <body>
   <div class="logo">
@@ -65,38 +65,26 @@ if (x.style.display === "none") {
     </div>
     <br>
     <br>
-  <button class="show" onclick="toggle1()">Patient Sign UP</button>
+  <button class="show" onclick="toggle1()">Patient Login</button>
 <br>
   <div id="input1">
-  <p>Please input your personal details</p>
+  <p>Please input your Login details</p>
   <input type="text" placeholder="Patient ID" id="patID_field">
   <input type="password" placeholder="Password" id="pass_field"><br>
-  <input type="text" placeholder="First Name" id="fname_field">
-  <input type="text" placeholder="Second Name" id="sname_field"><br>
-  <input type="text" placeholder="Phone Number" id="phone_field">
-  <input type="text" placeholder="Address" id="address_field"><br>
-  <input type="text" placeholder="Town" id="town_field">
-  <input type="text" placeholder="Eircode" id="eir_field"><br>
-  <button id="submit_btn"onclick="storedata1()">Submit</button><br>
+  <button id="submit_btn"onclick="storedata1()">Login</button><br>
 </div>
 
 <br>
 <br>
 <br>
 
-  <button class="show" onclick="toggle2()">Doctor Sign UP</button>
+  <button class="show" onclick="toggle2()">Doctor Login</button>
 <br>
   <div id="input2">
-  <p>Please input your details</p>
+  <p>Please input your Login details</p>
   <input type="text" placeholder="Doctor ID" id="docID_field">
   <input type="password" placeholder="Password" id="dpass_field"><br>
-  <input type="text" placeholder="First Name" id="dfname_field">
-  <input type="text" placeholder="Second Name" id="dsname_field"><br>
-  <input type="text" placeholder="Phone Number" id="dphone_field">
-  <input type="text" placeholder="Address" id="daddress_field"><br>
-  <input type="text" placeholder="Town" id="dtown_field">
-  <input type="text" placeholder="Eircode" id="deir_field"><br>
-  <button id="submit_btn"onclick="storedata2()">Submit</button><br>
+  <button id="submit_btn"onclick="storedata2()">Login</button><br>
   </div>
   <br>
   <br>
@@ -113,7 +101,7 @@ if (x.style.display === "none") {
   <div id="col2">
     <p>DrConnect</p>
       <p>Contact information: <a class="normal" href="mailto:webappgearhost@example.com">
-          webappgearhost@gmail.com</a></br>
+          webappgearhost@gmail.com</a><br>
           <a class="normal" href="tel:+123 123456789">123 123456789</a></p>
   </div>
 
