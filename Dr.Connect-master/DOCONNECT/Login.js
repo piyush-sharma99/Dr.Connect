@@ -1,4 +1,5 @@
 
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     document.getElementById("input1").style.display = "block";
@@ -23,3 +24,6 @@ function login(){
   });
 
 }
+
+
+

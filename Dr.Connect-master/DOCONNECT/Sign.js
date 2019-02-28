@@ -34,11 +34,14 @@ function storedata1(){
 })
 .then(function() {
     console.log("Document successfully written!");
+	window.location.pathname = '/index.html'
 })
 .catch(function(error) {
     console.error("Error writing document: ", error);
 });
 }
+
+
 
 //storing doctor firebase data//
 
