@@ -1,4 +1,13 @@
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    document.getElementById("input1").style.display = "block";
+    window.location.href = "Sign.html";
+  } else {
+    document.getElementById("input1").style.display = "none";
+
+  }
+});
 
 
 function login(){
@@ -11,15 +20,6 @@ function login(){
     var errorMessage = error.message;
 
     Window.alert("Error : " + errorMessage);
-  });
-
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-
-    } else {
-    window.location.href = "Sign.html";
-
-    }
   });
 
 }
