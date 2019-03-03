@@ -231,17 +231,29 @@ textarea {
 }
 
 
-#dochead{
-width:95%;
-background-color:00529F;
-height:22%;
-padding-bottom:33px;
-}
 
 
-.circular--square {
+.circular {
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
+}
+#topH{
+	background-color:#0061a7;
+	border-bottom: 2px solid black;
+	width:105%;
+	margin-left:-3%;
+	height:100px;
+	margin-top:-2%;
+}
+
+#docimg{
+	text-align:center;
+	padding-top:30px;
+}
+
+#docimg img{
+	height:250px;
+	width:300px;
 }
