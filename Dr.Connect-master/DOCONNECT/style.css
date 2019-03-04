@@ -244,16 +244,107 @@ textarea {
 	border-bottom: 2px solid black;
 	width:105%;
 	margin-left:-3%;
-	height:100px;
+	height:140px;
 	margin-top:-2%;
+	text-align:center;
 }
 
 #docimg{
 	text-align:center;
-	padding-top:30px;
+	padding-top:20px;
 }
 
 #docimg img{
-	height:250px;
-	width:300px;
+	height:200px;
+	width:250px;
+}
+body{
+overflow-y: scroll;
+overflow-x: hidden;}
+
+#topH img{
+height:100px;
+width:100px;
+padding-top:30px;	
+}
+
+#docimg input[type=text]{
+	float:right;
+	margin-left:-205px;
+	
+}
+
+#docimg button{
+	float:right;
+	height:30px;
+	width:30px;
+	
+}
+
+.docspatient{
+	border:2px solid black;
+	overflow:hidden;
+	margin:auto;
+	width:75%;
+
+}
+
+
+
+
+
+.docpatimage{
+	float:left;
+	width:33%;
+}
+
+.docpatinfo{
+	float:left;
+	width:33%;
+	text-align:center;
+}
+
+.functions{
+	margin-top:40px;
+	float:left;
+	width:33%;
+	text-align:center;
+}
+
+.functions input{
+	padding-top:15px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-align:center;
+  
+}
+
+.functions input {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.functions input:hover {
+  background-color: #00529F;
+  color: white;
+}
+
+.docpatinfo input{
+	padding-top:15px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-align:center;
+  
+}
+
+.docpatinfo input {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.docpatinfo input:hover {
+  background-color: #00529F;
+  color: white;
 }
