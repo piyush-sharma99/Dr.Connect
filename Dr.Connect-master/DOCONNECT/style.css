@@ -247,6 +247,13 @@ textarea {
 	margin-top:1%;
 	text-align:center;
 }
+.search{
+	float: right;
+}
+.search input{
+width:30px
+height:10px;
+}
 .sidenav {
   height: 100%;
   width: 0;
