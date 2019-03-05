@@ -257,6 +257,7 @@ textarea {
 #docimg img{
 	height:200px;
 	width:250px;
+	margin-left:20px;
 }
 body{
 overflow-y: scroll;
@@ -270,7 +271,7 @@ padding-top:30px;
 
 #docimg input[type=text]{
 	float:right;
-	margin-left:-205px;
+	margin-left:-250px;
 	
 }
 
