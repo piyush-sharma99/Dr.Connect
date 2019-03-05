@@ -241,12 +241,45 @@ textarea {
 }
 #topH{
 	background-color:#0061a7;
-	border-bottom: 2px solid black;
-	width:105%;
-	margin-left:-3%;
-	height:140px;
-	margin-top:-2%;
+	border: 2px solid black;
+	width:99%;
+	height:80px;
+	margin-top:1%;
 	text-align:center;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
 }
 
 #docimg{
@@ -266,20 +299,20 @@ overflow-x: hidden;}
 #topH img{
 height:100px;
 width:100px;
-padding-top:30px;	
+padding-top:30px;
 }
 
 #docimg input[type=text]{
 	float:right;
 	margin-left:-250px;
-	
+
 }
 
 #docimg button{
 	float:right;
 	height:30px;
 	width:30px;
-	
+
 }
 
 .docspatient{
@@ -318,7 +351,7 @@ padding-top:30px;
   color: black;
   border: 2px solid black;
   text-align:center;
-  
+
 }
 
 .functions input {
@@ -337,7 +370,7 @@ padding-top:30px;
   color: black;
   border: 2px solid black;
   text-align:center;
-  
+
 }
 
 .docpatinfo input {
