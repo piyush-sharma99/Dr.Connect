@@ -19,6 +19,17 @@
     messagingSenderId: "358747977546"
   };
   firebase.initializeApp(config);
+
+  // navigation button//
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
 </script>
 <script src="index.js">
 
@@ -31,23 +42,21 @@
 
 <body>
 
-<div class="logo">
-<img src="images/logo.png" alt="DoConnect Logo"></div>
-<div class="header">
-<h1>DrConnect</h1>
+<div id=main>
 
-        <h3>The easiest way to look after yourself!</h3></div>
-
-
-
-<div id="navmenu">
-            <a href="doctor.html">Doctor</a>
-            <a href="appointment.html">Appointment</a>
-			<a href="prescription.html">Prescription</a>
-			<a id="navright" href="index.html">Log Out</a>
-
+  <div id="mySidenav" class="sidenav" float->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="doctor.html">Doctor</a>
+          <a href="prescription.html">Prescription</a>
+          <a href="appointment.html">Apointment</a>
+          <a href="index.html">Log Out</a>
         </div>
+    <div id=main>    
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
 		<div style="text-align:center">
+      <h1>DrConnect</h1>
+      <h3>The easiest way to look after yourself!</h3>
 		<h3>Make the changes that you need to make</h3>
 		</div>
 <div id="center">
@@ -89,6 +98,7 @@
  <a href="https://ie.linkedin.com/"><img src="images/linkedin.png" alt="linkedin logo" width="30px" height="30px"/> </a>
  <a href="https://www.instagram.com/?hl=en"><img src="images/instagram.png" alt="instagram logo" width="30px" height="30px"/>  </a>
     </div>
+</div>
 </div>
 
   </body>
