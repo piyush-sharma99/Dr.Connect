@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "358747977546",
+    "firebase_url": "https://doctor-connect-5.firebaseio.com",
+    "project_id": "doctor-connect-5",
+    "storage_bucket": "doctor-connect-5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358747977546:android:69088d8abead7281",
+        "android_client_info": {
+          "package_name": "x17521139.student.ncirl.ie.drconnectapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358747977546-6heallkpqevverkf608il5v5efjhfhob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "x17521139.student.ncirl.ie.drconnectapp",
+            "certificate_hash": "9fa9fb27f1f683fbfcbc90647da880727b473add"
+          }
+        },
+        {
+          "client_id": "358747977546-aorf781jkqh8lsl7p1bm6si3m8irn9ef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "x17521139.student.ncirl.ie.drconnectapp",
+            "certificate_hash": "e20785c36d384367e3c75439e1cea1f57fd439a5"
+          }
+        },
+        {
+          "client_id": "358747977546-dnpc32t8vr4nida89u25dc9bhudmm59r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "x17521139.student.ncirl.ie.drconnectapp",
+            "certificate_hash": "bb73ddcfa3455c8273176e98babc464e5155a900"
+          }
+        },
+        {
+          "client_id": "358747977546-ds4589v1elidi38u5avdl8226taqeq9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCIKF6AAY9H5Xj9W5UCgA9fZAQvrK8kLQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358747977546-ds4589v1elidi38u5avdl8226taqeq9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

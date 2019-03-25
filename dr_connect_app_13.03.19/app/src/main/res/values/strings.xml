@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dr.Connect App</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_prescriptions">Prescriptions</string>
+    <string name="title_activity_doctor">Doctor</string>
+    <string name="title_activity_appointments">Appointments</string>
+    <string name="title_activity_notifications">Notifications</string>
+</resources>
