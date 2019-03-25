@@ -3,6 +3,28 @@
 <head>
 <title>Login</title>
 
+<script src="Login.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+ <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
+    authDomain: "doctor-connect-5.firebaseapp.com",
+    databaseURL: "https://doctor-connect-5.firebaseio.com",
+    projectId: "doctor-connect-5",
+    storageBucket: "doctor-connect-5.appspot.com",
+    messagingSenderId: "358747977546"
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
 <meta charset="utf-8">
 <link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -28,12 +50,13 @@
 </div>
 
 <br>
-
+<div id="firebaseui-auth-container"></div>
+<div id="loader">Loading...</div>
 <div id="input2">
 <h2> Doctor Log In</h2>
 <p>Please input your Login details</p>
-<input type="email" placeholder="Email...." id="demail_field"/>
-<input type="password" placeholder="Password...." id="dpass_field"/><br>
+<input type="email" placeholder="Email...." id="demail"></input>
+<input type="password" placeholder="Password...." id="dpass"></input><br>
 <button onclick="login()">Login</button>
 <br>
 </div>
@@ -68,20 +91,6 @@
 
   </div>
 
-<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
-    authDomain: "doctor-connect-5.firebaseapp.com",
-    databaseURL: "https://doctor-connect-5.firebaseio.com",
-    projectId: "doctor-connect-5",
-    storageBucket: "doctor-connect-5.appspot.com",
-    messagingSenderId: "358747977546"
-  };
-  firebase.initializeApp(config);
-</script>
-<script src="Login.js"></script>
 
 </body>
 
