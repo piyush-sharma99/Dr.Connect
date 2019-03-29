@@ -21,6 +21,7 @@ function storedata2(){
 
 
 	db.collection("Doctor").doc(inputDocID).set({
+	email: inputEmail,
   Fname: inputFname,
 	Sname: inputSname,
 	phone: inputPhone,

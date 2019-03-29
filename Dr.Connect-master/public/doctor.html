@@ -7,22 +7,13 @@
   
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
- <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
-    authDomain: "doctor-connect-5.firebaseapp.com",
-    databaseURL: "https://doctor-connect-5.firebaseio.com",
-    projectId: "doctor-connect-5",
-    storageBucket: "doctor-connect-5.appspot.com",
-    messagingSenderId: "358747977546"
-  };
-  firebase.initializeApp(config);
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
 
+
+  <script>
 // navigation button//
   function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -63,10 +54,19 @@ function closeNav() {
   <button type="submit" style="border: 0; background: transparent">
     <img src="images/search.png" width="60px" height="30px" alt="submit" />
 </button>
+
+
   <img class="circular" src="images/manexample.jpg" alt="man"><br>
-  <p> Dylan Murphy</p>
-  <p> Hannover Medical School</p>
-  <p> 54 Patients</p>
+</div>
+  
+  <div class="doctordiv" id="doctordetails">
+  <div class="list-item">
+   <p id="docname">
+
+   </p>
+
+</div>
+
   </div>
 
   <div class="docspatient">
@@ -87,6 +87,7 @@ function closeNav() {
   </div>
 </div>
 
-
+  
+<script src="doctor.js"></script>
   </body>
 </html>
