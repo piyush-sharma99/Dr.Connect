@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>DrConnect</title>
-  </head>
+ <head>
+  <meta charset="UTF-8">
+  <title>DrConnect</title>
 
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
 <style>
 	form {
   display: block;
   margin-top: 0em;
 }</style>
 
+</head>
 <body>
 
 <div id=main>
-
-  <div id="mySidenav" class="sidenav" float->
+<div id="mySidenav" class="sidenav" float->
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="doctor.html">Doctor</a>
           <a href="prescription.html">Prescription</a>
@@ -29,24 +27,24 @@
 <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 		<div style="text-align:center">
-      <h1>DrConnect</h1>
-      <h3>The easiest way to look after yourself!</h3>
+    <h1>DrConnect</h1>
+    <h3>The easiest way to look after yourself!</h3>
 		<h3>Make the changes that you need to make</h3>
 		</div>
 <div id="center">
-		<div class="container">
+	<div class="container">
 	  <label>Patient number</label>
-      <input type="text" id="patname"/><br />
+      <input type="text" placeholder="Patients Name" id="patname_field"><br />
       <label>Doctor number</label>
-      <input type="text" id="docnum"/><br />
+      <input type="text" placeholder="Doctor number" id="docnum_field"><br />
       <label>Medicine name 1</label>
-      <input type="text" id="med1"/><br />
+      <input type="text" placeholder="Medicine Name" id="med1_field"><br />
       <label>Medicine name 2</label>
-      <input type="text" id="med2"/><br />
+      <input type="text" placeholder="Medicine name" id="med2_field"><br />
       <label>Medicine name 3</label>
-      <input type="text" id="med3"/><br />
+      <input type="text" placeholder="Medicine name" id="med3_field"><br />
 	  <label>Reason of prescription</label>
-	  <textarea  id="Sum3"></textarea><br />
+	  <textarea  id="Sum3_field"></textarea><br />
 	  <button onclick="prescription()">Submit</button>
 
 </div>
@@ -74,18 +72,19 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
-    authDomain: "doctor-connect-5.firebaseapp.com",
-    databaseURL: "https://doctor-connect-5.firebaseio.com",
-    projectId: "doctor-connect-5",
-    storageBucket: "doctor-connect-5.appspot.com",
-    messagingSenderId: "358747977546"
-  };
-  firebase.initializeApp(config);
+var config = {
+  apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
+  authDomain: "doctor-connect-5.firebaseapp.com",
+  databaseURL: "https://doctor-connect-5.firebaseio.com",
+  projectId: "doctor-connect-5",
+  storageBucket: "doctor-connect-5.appspot.com",
+  messagingSenderId: "358747977546"
+};
+firebase.initializeApp(config);
 </script>
+
 <script src="prescription.js"></script>
 
   </body>
