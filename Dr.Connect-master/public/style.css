@@ -186,9 +186,7 @@ margin-bottom:300px;
 
 
 
-.container{
 
-}
 
 #submit{clear:both;
 	font-size:120%;
@@ -249,7 +247,7 @@ textarea {
 	float: right;
 }
 .search input{
-width:30px
+width:30px;
 height:10px;
 }
 .sidenav {
@@ -390,4 +388,9 @@ padding-top:30px;
 .docpatinfo input:hover {
   background-color: #00529F;
   color: white;
+}
+
+#doctordiv{
+text-align: center;
+
 }
