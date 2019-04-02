@@ -1,14 +1,17 @@
-var db = firebase.firestore();
+
 //storing doctor firebase data//
 
 function prescription(){
-	var inputPatname = document.getElementById("patname").value;
-	var inputDocnum = document.getElementById("docnum").value;
-	var inputMed1 = document.getElementById("med1").value;
-	var inputMed2 = document.getElementById("med2").value;
-	var inputMed3 = document.getElementById("med3").value;
-	var inputSum3= document.getElementById("sum3").value;
 
+var db = firebase.firestore();
+
+
+	var inputPatname = document.getElementById("patname_field").value;
+	var inputDocnum = document.getElementById("docnum_field").value;
+	var inputMed1 = document.getElementById("med1_field").value;
+	var inputMed2 = document.getElementById("med2_field").value;
+	var inputMed3 = document.getElementById("med3_field").value;
+	var inputSum3= document.getElementById("Sum3_field").value;
 
 	db.collection("Prescription").doc(inputDocnum).set({
   patname: inputPatname,

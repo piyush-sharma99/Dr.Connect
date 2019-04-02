@@ -30,8 +30,6 @@ function storedata2(){
 	Eircode: inputEir,
 	DocID: inputDocID
 
-
-
 })
 .then(function() {
     console.log("Document successfully written!");
