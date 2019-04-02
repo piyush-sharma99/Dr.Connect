@@ -58,12 +58,16 @@ getRealtimeUpdates();*/
 
 
 
-var docRef = db.doc("Doctor/example/usersname/name");
-const name = document.querySelector("#docname");
+var docRef = db.doc("Doctor/example");
+//const name = document.querySelector("#docname");
+const listitem = document.querySelector("#list-item");
+
 
 docRef.get().then(function(doc) {
     if (doc.exists) {
-        name.innerText= "name : " + doc.data();
+       
+        listitem.innerHTML += "<div id=list-item><p>" + doc.data().Fname +" "+ doc.data().Sname + "<p></div>";
+       // alert(JSON.stringify(doc.data(), null, 4));
         console.log("Document data:", doc.data());
         
     
@@ -74,3 +78,16 @@ docRef.get().then(function(doc) {
 }).catch(function(error) {
     console.log("Error getting document:", error);
 });
+
+
+/*
+db.doc("Doctor/example/usersname/name").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+        name.innerHTML= doc.data();
+        console.log(doc.id, " => ", doc.data());
+    });
+});
+
+*/
+
+
