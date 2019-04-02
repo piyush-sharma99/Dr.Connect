@@ -66,7 +66,7 @@ const listitem = document.querySelector("#list-item");
 docRef.get().then(function(doc) {
     if (doc.exists) {
        
-        listitem.innerHTML += "<div id=list-item><p>" + doc.data().Fname +" "+ doc.data().Sname + "<p></div>";
+        listitem.innerHTML = "<div id=list-item><p>" + doc.data().Fname +" "+ doc.data().Sname + "<br>" + doc.data().DocID + "<br>"+ doc.data().email + "<p></div>";
        // alert(JSON.stringify(doc.data(), null, 4));
         console.log("Document data:", doc.data());
         
@@ -91,3 +91,11 @@ db.doc("Doctor/example/usersname/name").get().then(function(querySnapshot) {
 */
 
 
+btnName.addEventListener('click', e => {
+    let user = firebase.auth().currentUser;    
+    console.log(user);
+    if(user)
+        console.log(db.collection("users").doc(uuser.uid))
+    else
+        alert('user not logged in')
+});
