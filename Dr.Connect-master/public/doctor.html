@@ -23,7 +23,13 @@
     document.getElementById("main").style.marginLeft = "0";
   }
 
-
+function logout(){
+  firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}, function(error) {
+  // An error happened.
+});
+}
 </script>
 
 <body>
@@ -39,15 +45,11 @@
       <a href="doctor.html">Doctor</a>
       <a href="prescription.html">Prescription</a>
       <a href="appointment.html">Apointment</a>
-      <a href="index.html">Log Out</a>
+      <a href="index.html"  onclick="logout()">Log Out </a>
     </div>
 
     <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <div class="search">
-      <input type="text" placeholder="Search..">
-      <button type="submit" style="border: 0; background: transparent">
-        <img src="images/search.png" width="60px" height="50px" alt="submit" />
-    </div>
+    
     <div id="docimg">
 
       <button type="submit" style="border: 0; background: transparent">
@@ -61,7 +63,7 @@
     <div class="doctordiv" id="doctordetails">
       <div id="list-item">
         <p id="docname">
-          name:dylan
+          
         </p>
 
       </div>
