@@ -8,9 +8,9 @@
   firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
      var example = user.email;
-      var docRef = db.doc("Doctor/"+example+"Reservation/");
+      var docRef = db.doc("Reservation/");
       docRef.get().then(function (doc) {
-          if (doc.exists) {
+          if (doc.exists && doc.data().date == "1/11/11") {
               const listitem = document.querySelector("#list2-item");
               listitem.innerHTML = "<div id=list2-item><p>" + doc.data().date + " " + doc.data().name + "<p></div>";
               // alert(JSON.stringify(doc.data(), null, 4));
