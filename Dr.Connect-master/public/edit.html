@@ -1,89 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>DrConnect</title>
-  </head>
-  
-  <script src="edit.js"></script>
+ <head>
+  <meta charset="UTF-8">
+  <title>DrConnect</title>
+
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
- <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
-    authDomain: "doctor-connect-5.firebaseapp.com",
-    databaseURL: "https://doctor-connect-5.firebaseio.com",
-    projectId: "doctor-connect-5",
-    storageBucket: "doctor-connect-5.appspot.com",
-    messagingSenderId: "358747977546"
-  };
-  firebase.initializeApp(config);
-
-
-  // navigation button//
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-
-</script>
-<script src="index.js">
-
-</script>
 <style>
 	form {
   display: block;
   margin-top: 0em;
 }</style>
 
+</head>
 <body>
 
+<div id=main>
+<div id="mySidenav" class="sidenav" float->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="doctor.html">Doctor</a>
+          <a href="prescription.html">Prescription</a>
+          <a href="appointment.html">Apointment</a>
+          <a href="index.html">Log Out</a>
+        </div>
 
-
-
-<div id="main">
-
-  <div id="mySidenav" class="sidenav" float->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="doctor.html">Doctor</a>
-    <a href="prescription.html">Prescription</a>
-    <a href="appointment.html">Apointment</a>
-    <a href="index.html">Log Out</a>
-  </div>
-
-   <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 		<div style="text-align:center">
-        <h1>DrConnect</h1>
-		<h3>Make the changes that you need to make</h3>
+    <h1>DrConnect</h1>
+    <h3>Add patient information below</h3>
+		<h3>To make changes contact database administrator</h3>
 		</div>
 <div id="center">
-		<div class="container">
-      <div id="PatName"></div>
-	<form action="/action_page.php" id="edit">
-      <label>Illness</label>
-      <input type="text" name="last"><br />
-      <label>Current status</label>
-      <input type="text" name="illness"><br />
-	  <label>Summary of patients illness</label>
-	  <textarea name="Sum2"></textarea><br />
-	  <input type="submit" name="Submit" value="submit">
+	<div class="container">
+	  <label>Patient number</label>
+      <input type="text" placeholder="Patients Name" id="patnum_field"><br />
+      <label>Doctor number</label>
+      <input type="text" placeholder="Doctor number" id="docnum_field"><br />
+      <label>Phone number</label>
+      <input type="text" placeholder="Patient number" id="patnum2_field"><br />
+      <label>Address</label>
+      <input type="text" placeholder="Patient address" id="patadd_field"><br />
+      <label>Sickness</label>
+      <input type="text" placeholder="Sickness" id="patsick_field"><br />
+	  <label>Treatment description</label>
+	  <textarea  id="Sum4_field"></textarea><br />
+	  <button onclick="prescription()">Submit</button>
 
-</div>
 </div>
 </div>
 <br>
-  </form>
 <div id="footer">
 
 <div id="col1">
@@ -104,6 +70,22 @@
     </div>
 </div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+
+<script>
+var config = {
+  apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
+  authDomain: "doctor-connect-5.firebaseapp.com",
+  databaseURL: "https://doctor-connect-5.firebaseio.com",
+  projectId: "doctor-connect-5",
+  storageBucket: "doctor-connect-5.appspot.com",
+  messagingSenderId: "358747977546"
+};
+firebase.initializeApp(config);
+</script>
+
+<script src="edit.js"></script>
 
   </body>
 </html>
