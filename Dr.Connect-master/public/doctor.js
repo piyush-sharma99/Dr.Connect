@@ -15,43 +15,7 @@ var app_firebase = {};
 })()
 
 
-
 var db = firebase.firestore();
-/*
-const docRef = firestore.collection("Doctor").doc("example");
-const doctordetails= document.querySelector("#doctordetails");
-const name = document.querySelector("#docname");
-
-//db.collection("docref").get().then(function(querySnapshot) {
- //   querySnapshot.forEach(function(doc) {
-    //    docRef.get({
-
-       //     doctordetails= doc.data().fname
-      //  });
-      //  doctordetails.innerHTML += "<div class='list-item'><h3>" + doc.data().fname +"</h3></div>";
-//    });
-//});
-
-getRealtimeUpdates= function(){
-docRef.onSnapshot(function (doc){
-if (doc && doc.exists) {
-    const myData = doc.data(fname);
-    docname.innerText= "name : " + myData;
-    console.log("saved")
-    
-    
-    
-}
-
-})
-}
-
-
-getRealtimeUpdates();*/
-
-
-
-
 
 var currentUser = firebase.auth().currentUser;
 
@@ -81,6 +45,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       });
     
     
+      
 
 //const name = document.querySelector("#docname");
 
@@ -88,30 +53,4 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
 
-/*
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      var displayName = user.displayName;
-      var email = user.email;
-      var emailVerified = user.emailVerified;
-      var photoURL = user.photoURL;
-      var isAnonymous = user.isAnonymous;
-      var uid = user.uid;
-      var providerData = user.providerData;
-      // ...
-    } else {
-      // User is signed out.
-      // ...
-    }
-  });
-/*
-db.doc("Doctor/example/usersname/name").get().then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-        name.innerHTML= doc.data();
-        console.log(doc.id, " => ", doc.data());
-    });
-});
-
-*/
 

@@ -7,22 +7,10 @@
 
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  
 
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
   <script>
     // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyD-eemQvHniRe-5D6p2aY0A32PYajdm8yg",
-      authDomain: "doctor-connect-5.firebaseapp.com",
-      databaseURL: "https://doctor-connect-5.firebaseio.com",
-      projectId: "doctor-connect-5",
-      storageBucket: "doctor-connect-5.appspot.com",
-      messagingSenderId: "358747977546"
-    };
-    firebase.initializeApp(config);
 
     // navigation button//
     function openNav() {
@@ -36,7 +24,7 @@
     }
 
   </script>
-  <script src="appointment.js"> </script>
+
 
   <style>
     form {
@@ -62,15 +50,13 @@
     <div style="text-align:center">
       <h1>DrConnect</h1>
       <h3> Here are your appointments doctor</h3>
+<div id="list-item">
 
-     
-    </div>
+</div>
 
-    <div id="list2-item">
-      <p id="docname">
-        
-      </p>
-
+<div id="list-itemAccepted">
+  </div>
+      <button type="submit" onclick="appointment()">Refresh</button>
     </div>
     <br>
     <div id="footer">
@@ -98,7 +84,11 @@
     </div>
   </div>
   
-
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+<script src="appointment.js"></script>  
 </body>
 
 </html>
