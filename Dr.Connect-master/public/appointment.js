@@ -23,6 +23,7 @@ var currentUser = firebase.auth().currentUser;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
    var example = user.email;
@@ -144,6 +145,22 @@ firebase.auth().onAuthStateChanged(function (user) {
 >>>>>>> parent of 29accb5... major changes includes all main features
 =======
 
+=======
+  /*firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+     var example = user.email;
+     var useremail = usersemail
+
+      }).catch(function (error) {
+          console.log("Error getting document:", error);
+      });
+          } else {
+            // No user is signed in.
+          }
+        });
+      */
+
+>>>>>>> parent of 29accb5... major changes includes all main features
         db.collection("Doctor/dylan22@gmail.com/Appointment").get().then(function(querySnapshot) {
           querySnapshot.forEach(function(doc) {
               // doc.data() is never undefined for query doc snapshots
@@ -153,4 +170,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
           });
       });
+<<<<<<< HEAD
+>>>>>>> parent of 29accb5... major changes includes all main features
+=======
 >>>>>>> parent of 29accb5... major changes includes all main features
