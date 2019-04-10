@@ -396,15 +396,12 @@ text-align: center;
 }
 #list-item{
 text-align:center;
-
-
-}
-
-#list-item p {
 float:left;
 width:50%;
 margin-bottom: 50px;
+
 }
+
 
 #list-itemAccepted{
   float:right;
