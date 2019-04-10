@@ -18,11 +18,20 @@ var app_firebase = {};
 var db = firebase.firestore();
 
 var currentUser = firebase.auth().currentUser;
+<<<<<<< HEAD
+=======
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f98a180... dwqqda
 /*firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
    var example = user.email;
    var useremail = usersemail
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   firebase.auth().onAuthStateChanged(function(user) {
@@ -47,13 +56,14 @@ var currentUser = firebase.auth().currentUser;
             console.log("No such document!");
         }
 >>>>>>> parent of 9ef8341... Revert "major changes includes all main features"
+=======
+>>>>>>> parent of f98a180... dwqqda
     }).catch(function (error) {
         console.log("Error getting document:", error);
     });
         } else {
           // No user is signed in.
         }
-<<<<<<< HEAD
       });
     */
 
