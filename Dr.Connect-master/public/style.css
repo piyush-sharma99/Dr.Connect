@@ -69,9 +69,6 @@ margin-top:-120px;
 
 
 }
-#doctordetails{
-  text-align: center;
-}
 
 #input2{
 	text-align:center;
@@ -346,7 +343,7 @@ padding-top:30px;
 
 .functions{
 	margin-top:40px;
-	padding-left: 33.5%;
+	float:left;
 	width:33%;
 	text-align:center;
 }

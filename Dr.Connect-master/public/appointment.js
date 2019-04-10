@@ -23,6 +23,7 @@ var currentUser = firebase.auth().currentUser;
    var example = user.email;
    var useremail = usersemail
 
+<<<<<<< HEAD
 =======
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
@@ -104,3 +105,29 @@ firebase.auth().onAuthStateChanged(function (user) {
   }
 });
 
+=======
+
+  /*firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+     var example = user.email;
+     var useremail = usersemail
+
+      }).catch(function (error) {
+          console.log("Error getting document:", error);
+      });
+          } else {
+            // No user is signed in.
+          }
+        });
+      */
+
+        db.collection("Doctor/dylan22@gmail.com/Appointment").get().then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              // doc.data() is never undefined for query doc snapshots
+              console.log(doc.id, " => ", doc.data());
+              const listitem = document.querySelector("#list-item");
+              listitem.innerHTML += "<div><p>"+ doc.data().Name + " " + doc.data().Gay + "</p></div>";
+
+          });
+      });
+>>>>>>> parent of 29accb5... major changes includes all main features
