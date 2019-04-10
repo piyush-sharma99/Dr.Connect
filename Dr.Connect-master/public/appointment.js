@@ -18,14 +18,7 @@ var app_firebase = {};
 var db = firebase.firestore();
 
 var currentUser = firebase.auth().currentUser;
-<<<<<<< HEAD
-=======
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of f98a180... dwqqda
 /*firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
    var example = user.email;
@@ -91,53 +84,6 @@ firebase.auth().onAuthStateChanged(function (user) {
   }
 });
 
-firebase.auth().onAuthStateChanged(function (user) {
-  if (user) {
-    useremail = user.email;
-    db.collection("Doctor/" + useremail + "/Appointment").get().then(function (querySnapshot) {
-      querySnapshot.forEach(function (doc) {
-        if (doc.data().Status == "Accepted") {
-          // doc.data() is never undefined for query doc snapshots
-          var dateString = doc.data().Date.toDate();
-          dateString = new Date(dateString).toUTCString();
-          dateString = dateString.split(' ').slice(0, 4).join(' ');
-          console.log(dateString);
-          console.log(doc.id, " => ", doc.data());
-          const listitem1 = document.querySelector("#list-itemAccepted");
-          listitem1.innerHTML += "<div><p>" + doc.data().Name + " " + dateString + "</p></div>";
 
-        }
-      });
-    });
-  } else {
-    const listitem1 = document.querySelector("#list-itemAccepted");
-          listitem1.innerHTML = "<div><p> There is no Current appointments to be accepted </p></div>";
-  }
-});
 
-=======
 
-  /*firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {
-     var example = user.email;
-     var useremail = usersemail
-
-      }).catch(function (error) {
-          console.log("Error getting document:", error);
-      });
-          } else {
-            // No user is signed in.
-          }
-        });
-      */
-
-        db.collection("Doctor/dylan22@gmail.com/Appointment").get().then(function(querySnapshot) {
-          querySnapshot.forEach(function(doc) {
-              // doc.data() is never undefined for query doc snapshots
-              console.log(doc.id, " => ", doc.data());
-              const listitem = document.querySelector("#list-item");
-              listitem.innerHTML += "<div><p>"+ doc.data().Name + " " + doc.data().Gay + "</p></div>";
-
-          });
-      });
->>>>>>> parent of 29accb5... major changes includes all main features
