@@ -64,3 +64,20 @@ firebase.auth().onAuthStateChanged(function (user) {
           listitem1.innerHTML = "<div><p> There is no Current appointments to be accepted </p></div>";
   }
 });
+
+
+
+
+
+
+function Delete(){
+  
+  var Delete = document.getElementById(Delete_field).Value;
+
+  db.collection("Doctor/" + useremail + "/Appointment").doc(Delete).delete().then(function() {
+    console.log("Document successfully deleted!");
+}).catch(function(error) {
+    console.error("Error removing document: ", error);
+});
+
+};
