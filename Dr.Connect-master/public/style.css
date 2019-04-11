@@ -405,9 +405,13 @@ margin-bottom: 50px;
 
 }
 
+#list-item
+}
+
 
 #list-itemAccepted{
   float:right;
   width:50%;
   margin-bottom: 50px;
+  text-align:center;
 }
