@@ -11,6 +11,7 @@ function storedata2(){
 	var inputDocID = document.getElementById("docID_field").value;
   var inputPass = document.getElementById("dpass_field").value;
 	var inputEmail = document.getElementById("demail_field").value;
+ var random = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 
 	firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPass).catch(function(error) {
 	  // Handle Errors here.
@@ -20,7 +21,7 @@ function storedata2(){
 	});
 
 
-	db.collection("Doctor").doc(inputDocID).set({
+	db.collection("Doctor").doc(inputEmail).set({
 	email: inputEmail,
   Fname: inputFname,
 	Sname: inputSname,
@@ -31,6 +32,13 @@ function storedata2(){
 	DocID: inputDocID
 
 })
+
+
+db.collection("Doctor").doc(inputEmail).collection("Appointment").doc(null).set({
+ 
+})
+
+
 .then(function() {
     console.log("Document successfully written!");
 })
