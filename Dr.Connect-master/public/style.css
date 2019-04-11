@@ -400,15 +400,15 @@ text-align: center;
 
 }
 #list-item{
-text-align:center;
+text-align:center;}
 
-#list-item
+#hidden{
+  display:none;
 }
 
 
-#list-itemAccepted{
-  float:right;
-  width:50%;
-  margin-bottom: 50px;
-  text-align:center;
+#dowork{
+
+  text-align: center;
+  padding-bottom: 20px;
 }
