@@ -22,7 +22,7 @@ var currentUser = firebase.auth().currentUser;
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-   var example = user.email;
+   var example = user.uid;
     var docRef = db.doc("Doctor/"+ example);
     docRef.get().then(function (doc) {
         if (doc.exists) {
