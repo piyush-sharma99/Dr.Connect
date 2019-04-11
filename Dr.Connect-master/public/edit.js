@@ -1,4 +1,3 @@
-
 //storing doctor firebase data//
 
 function prescription(){
@@ -42,4 +41,3 @@ function prescription(){
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
     }
-    
