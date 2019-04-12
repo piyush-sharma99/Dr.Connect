@@ -54,7 +54,7 @@ firebase.auth().onAuthStateChanged(function (user) {
           console.log(dateString);
           console.log(doc.id, " => ", doc.data());
           const listitem1 = document.querySelector("#list-itemAccepted");
-          listitem1.innerHTML += "<div><p>" + doc.data().Name + " " + dateString + "</p></div>";
+          listitem1.innerHTML += "<div id='styling'><p>" + doc.data().Name + " " + dateString + "</p></div>";
 
         }
       });

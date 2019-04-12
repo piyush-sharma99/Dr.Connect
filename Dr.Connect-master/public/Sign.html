@@ -9,9 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
   <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
  <script>
 
   // Initialize Firebase
@@ -49,10 +49,16 @@
   <div id="input2">
     <h2> Doctor Sign Up</h2>
   <p>Please input your details</p>
-  <input type="email" placeholder="Email...." id="demail_field">
+  <input type="email" placeholder="Email...." id="demail_field"><br>
+  <input type="text" placeholder="Doctor ID...." id="docID_field">
   <input type="password" placeholder="Password...." id="dpass_field"><br>
- 
-<button id="submit_btn" onclick="storedata2()">Submit</button><br>
+  <input type="text" placeholder="First Name...." id="dfname_field">
+  <input type="text" placeholder="Second Name...." id="dsname_field"><br>
+  <input type="text" placeholder="Phone Number...." id="dphone_field">
+  <input type="text" placeholder="Address...." id="daddress_field"><br>
+  <input type="text" placeholder="Town...." id="dtown_field">
+  <input type="text" placeholder="Eircode...." id="deir_field"><br>
+  <button id="submit_btn"onclick="storedata2()">Submit</button><br>
   </div>
   <br>
   <br>
