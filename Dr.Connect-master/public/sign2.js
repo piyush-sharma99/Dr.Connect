@@ -11,14 +11,8 @@ function storedata2(){
 	var inputDocID = document.getElementById("docID_field").value;
     var inputEmail = document.getElementById("demail_field").value;
    
-    var currentUser = firebase.auth().currentUser;
-
-
-firebase.auth().onAuthStateChanged(function(user) {
-    if(user){
-        var uid = user.uid
-    db.collection("Doctor").doc(uid).set({
-
+    
+	db.collection("Doctor").doc(user.uid).set({
         email: inputEmail,
       Fname: inputFname,
         Sname: inputSname,
@@ -29,8 +23,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         DocID: inputDocID
     
     })
-}
-})
+    
     
     db.collection("Doctor").doc(inputEmail).collection("Appointment").doc(null).set({
      
