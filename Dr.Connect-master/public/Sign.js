@@ -44,8 +44,7 @@ db.collection("Doctor").doc(inputEmail).collection("Appointment").doc(null).set(
 
 .then(function() {
 		console.log("Document successfully written!");
-		function storedata2(){
-			window.href="doctor.html"}
+		
 })
 .catch(function(error) {
     console.error("Error writing document: ", error);
