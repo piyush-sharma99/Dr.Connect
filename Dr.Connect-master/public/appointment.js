@@ -22,7 +22,7 @@ var currentUser = firebase.auth().currentUser;firebase.auth().onAuthStateChanged
     useremail = user.email;
     db.collection("Doctor/" + useremail + "/Appointment").get().then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
-        if (doc.data().Status == "Wait") {
+        if (doc.exists) {
           // doc.data() is never undefined for query doc snapshots
           var dateString = doc.data().Date.toDate();
           dateString = new Date(dateString).toUTCString();
