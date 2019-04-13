@@ -9,11 +9,10 @@ function storedata2(){
 	var inputTown = document.getElementById("dtown_field").value;
 	var inputEir = document.getElementById("deir_field").value;
 	var inputDocID = document.getElementById("docID_field").value;
-    var inputEmail = document.getElementById("demail_field").value;
-   
+    let user = firebase.auth().currentUser;
     
 	db.collection("Doctor").doc(user.uid).set({
-        email: inputEmail,
+        email: user.email,
       Fname: inputFname,
         Sname: inputSname,
         phone: inputPhone,
@@ -25,16 +24,9 @@ function storedata2(){
     })
     
     
-    db.collection("Doctor").doc(inputEmail).collection("Appointment").doc(null).set({
-     
-    })
+
     
     
-    .then(function() {
-        console.log("Document successfully written!");
-    })
-    .catch(function(error) {
-        console.error("Error writing document: ", error);
-    });
+    
     }
     
