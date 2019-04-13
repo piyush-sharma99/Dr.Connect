@@ -7,7 +7,7 @@ function prescription(){
     
         var inputPatnum = document.getElementById("patientEmail").value;
         var inputDocnum = document.getElementById("docnum_field").value;
-        var PatPhone = document.getElementById("patnum2_field").value;
+        var PatPhone = document.getElementById("patphone").value;
         var inputPatadd = document.getElementById("patadd_field").value;
         var inputPatsick = document.getElementById("patsick_field").value;
         var inputSum4 = document.getElementById("Sum4_field").value;
