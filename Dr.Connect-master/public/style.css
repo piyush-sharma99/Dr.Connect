@@ -328,10 +328,14 @@ padding-top:30px;
 	overflow:hidden;
 	margin:auto;
 	width:75%;
-
 }
 
-
+.unhide{
+	border:2px solid black;
+	overflow:hidden;
+	margin:auto;
+	width:75%;
+}
 
 
 
@@ -416,3 +420,4 @@ text-align:center;}
 #styling{
 border-bottom:3px solid black;
 }
+

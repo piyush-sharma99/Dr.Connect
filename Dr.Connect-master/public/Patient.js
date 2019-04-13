@@ -24,7 +24,7 @@ function search(){
   db.collection("Patient").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         if(patientEmail == doc.data().PatientEmail){
-          listitem.innerHTML = "<div><p> <br> Patient Number: " + doc.data().PatientNumber + "<br> Patient Email: " + doc.data().PatientEmail + " " + + "</p></div>";
+          listitem.innerHTML = "<div><p> <br> Patient Number: " + doc.data().PatientNumber + "<br> Patient Email:  " + doc.data().PatientEmail + "<br> Patient Address: " + doc.data().PatientAddress + "<br> PatientID:" + doc.data().PatID +  "</p></div>";
         console.log(doc.id, " => ", doc.data());
       
       
