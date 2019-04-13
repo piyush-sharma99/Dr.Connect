@@ -13,9 +13,12 @@ function storedata2(){
 			console.log("Document successfully written!");
 		
 			
-		
+	
 	}
 
 
 		
+}
+function next(){
+	location.replace("sign2.html")
 }

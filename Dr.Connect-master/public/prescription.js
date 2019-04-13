@@ -6,7 +6,7 @@ function prescription(){
 var db = firebase.firestore();
 
 
-	var inputPatname = document.getElementById("patname_field").value;
+	var inputPatID = document.getElementById("patID_field").value;
 	var inputDocnum = document.getElementById("docnum_field").value;
 	var inputMed1 = document.getElementById("med1_field").value;
 	var inputMed2 = document.getElementById("med2_field").value;
@@ -14,7 +14,7 @@ var db = firebase.firestore();
 	var inputSum3= document.getElementById("Sum3_field").value;
 
 	db.collection("Prescription").doc(inputDocnum).set({
-  patname: inputPatname,
+  patID: inputPatID,
 	docnum: inputDocnum,
 	med1: inputMed1,
 	med2: inputMed2,

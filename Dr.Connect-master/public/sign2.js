@@ -24,9 +24,9 @@ function storedata2(){
     })
     
     
-
     
-    
-    
+    }
+    function next(){
+        location.replace("doctor.html")
     }
     
