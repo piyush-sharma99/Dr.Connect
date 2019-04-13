@@ -326,8 +326,10 @@ padding-top:30px;
 .docspatient{
 	border:2px solid black;
 	overflow:hidden;
-	margin:auto;
-	width:75%;
+	margin-left:11.3%;
+  width:75%;
+  text-align: center;
+  
 }
 
 .unhide{
@@ -366,6 +368,20 @@ padding-top:30px;
   padding-bottom:13px;
   padding-right:10px;
   padding-left:10px;
+  width: 70%;
+
+}
+
+.functions button{
+	padding-top:15px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-align:center;
+  padding-bottom:13px;
+  padding-right:10px;
+  padding-left:10px;
+  width: 70%;
 
 }
 
@@ -420,4 +436,6 @@ text-align:center;}
 #styling{
 border-bottom:3px solid black;
 }
+
+
 

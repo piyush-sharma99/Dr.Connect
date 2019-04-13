@@ -27,7 +27,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     docRef.get().then(function (doc) {
         if (doc.exists) {
             const listitem = document.querySelector("#list-item");
-            listitem.innerHTML = "<div id=list-item><p>" + doc.data().Fname + " " + doc.data().Sname + "<br>" + doc.data().DocID + "<br>" + doc.data().email + "<p></div>";
+            listitem.innerHTML = "<div id=list-item><p>" + doc.data().Fname + " " + doc.data().Sname + "<br><br>" + doc.data().DocID + "<br><br>" + doc.data().email + "<p></div>";
             // alert(JSON.stringify(doc.data(), null, 4));
             console.log("Document data:", doc.data());
     

@@ -7,7 +7,7 @@
 
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  
+
 
   <script>
     // Initialize Firebase
@@ -38,6 +38,8 @@
     <a href="doctor.html">Doctor</a>
     <a href="prescription.html">Prescription</a>
     <a href="appointment.html">Apointment</a>
+    <a href="Patient.html">Search Patient</a>
+     <a href="edit.html">Add Patient</a>
     <a href="index.html">Log Out</a>
   </div>
 
@@ -46,28 +48,24 @@
 
     <div id="closed" style="text-align:center">
       <h1>DrConnect</h1>
-      <h3> Search the Patient below</h3>
-      <label>Patient Email</label><br>
-      <input type="text" placeholder="Patient Email" id="patientEmail"><br/><br>
-      <button type="submit" onclick="search()">submit</button>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div id="list-item">
+      <h3> Search the Patient below by using their email</h3>
+      <div class="docspatient"><br>
+        <label>Patient Email</label><br>
+        <input type="text" placeholder="Patient Email" id="patientEmail"><br /><br>
+        <button type="submit" onclick="search()">submit</button>
+        <br>
+        <br>
+        <div id="list-item">
 
         </div>
-      <br>
-      <br>   <br>
-      <br>
-      <br>   <br>
-      <br>
-      <br>   <br>
-      
+      </div>
+      <br><br><br><br><br><br>
+
+
 
     </div>
-    
-      
+
+
 
     <div id="footer">
 
@@ -79,7 +77,7 @@
       <div id="col2">
         <p class="none">Contact information: <a class="normal" href="mailto:Doctorconnect123@example.com">
             doctorconnect123@gmail.com</a></br>
-          <a class="normal" href="tel:+123 123456789">123 123456789</a></p>
+          <a class="normal" href="tel:+123 123456789">089 8764383</a></p>
       </div>
       <div id="col3">
         <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo" width="30px"
@@ -93,12 +91,12 @@
       </div>
     </div>
   </div>
-  
+
   <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
-<script src="Patient.js"></script>  
+  <script src="Patient.js"></script>
 </body>
 
 </html>
