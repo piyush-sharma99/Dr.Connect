@@ -21,7 +21,7 @@ var db = firebase.firestore();
 	med2: inputMed2,
 	med3: inputMed3,
 	description: inputSum3,
-	DocEmail: user.uid
+	DocUID: user.uid
 
 
 
