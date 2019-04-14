@@ -44,92 +44,88 @@
       <a href="prescription.html">Prescription</a>
       <a href="appointment.html">Apointment</a>
       <a href="Patient.html">Search Patient</a>
-     <a href="edit.html">Add Patient</a>
-     <a href="index.html" onclick="logout()">Log Out </a>
+      <a href="edit.html">Add Patient</a>
+      <a href="index.html" onclick="logout()">Log Out </a>
     </div>
 
     <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div id="all">
-    <div style="text-align:center;">
-      <h1>DrConnect</h1>
-      <h3>  Welcome to the your profile doctor</h3>
-      <p>You can use your profile to carry out multiple tasks all stated in in the navigation system and as buttons below:
-        
-      </p>
-     
-    </div>
-    
-    <div id="docimg">
+      <div style="text-align:center;">
+        <h1>DrConnect</h1>
+        <h3> Welcome to the your profile doctor</h3>
+        <p>You can use your profile to carry out multiple tasks all stated in in the navigation system and as buttons
+          below:
 
-      <button type="submit" style="border: 0; background: transparent">
-        <img src="images/search.png" width="60px" height="30px" alt="submit" />
-      </button>
-      <img class="circular" src="images/logo.png" alt="images/default.png"><br>
-    </div>
-    <br>
-<div class="docspatient">
-      <div style="text-align:center">
-        <h3>Your information is below doctor</h3>
+        </p>
 
-        <div class="doctordiv" id="doctordetails">
-          <div id="list-item">
-            <p id="docname">
+      </div>
 
-            </p>
+      <div id="docimg">
 
+        <button type="submit" style="border: 0; background: transparent">
+          <img src="images/search.png" width="60px" height="30px" alt="submit" />
+        </button>
+        <img class="circular" src="images/logo.png" alt="images/default.png"><br>
+      </div>
+      <br>
+      <div class="docspatient">
+        <div style="text-align:center">
+          <h3>Your information is below doctor</h3>
+
+          <div class="doctordiv" id="doctordetails">
+            <div id="list-item">
+              <p id="docname">
+
+              </p>
+
+            </div>
+          </div>
+
+          <div class="functions">
+            <input type="button" onclick="location.href='edit.html'" value="Add Patient information"></input><br></br>
+            <input type="button" onclick="location.href='Patient.html'" value="Patient"></input><br></br>
+            <input type="button" onclick="location.href='appointment.html'" value="Appointment"></input><br><br>
+            <input type="button" onclick="location.href='prescription.html'" value="Prescription"></input><br>
+
+            <br><br>
           </div>
         </div>
+      </div>
+      <br>
+      <br>
+    </div>
 
-        <div class="functions">
-          <input type="button" onclick="location.href='edit.html'" value="Add Patient information"></input><br></br>
-          <input type="button" onclick="location.href='Patient.html'" value="Patient"></input><br></br>
-          <input type="button" onclick="location.href='appointment.html'" value="Appointment"></input><br><br>
-          <input type="button" onclick="location.href='prescription.html'" value="Prescription"></input><br>
-          
-          <br><br>
-        </div>
+    <div id="footer">
+
+      <div id="col1">
+
+        <p>Designed by:<br><br>Dylan<br>Piyush<br>Mathew<br>Ben<br>Keith</p>
+      </div>
+
+      <div id="col2">
+        <p class="none">Contact information: <a class="normal" href="mailto:DocConnect123@example.com">
+            drconnect123@gmail.com</a></br>
+          <a class="normal" href="tel:+123 123456789">089 8764383</a></p>
+      </div>
+      <div id="col3">
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo" width="30px"
+            height="30px" /> </a>
+        <a href="https://twitter.com/?lang=en"><img src="images/twitter.jpg" alt="twitter logo" width="30px"
+            height="30px" /> </a>
+        <a href="https://ie.linkedin.com/"><img src="images/linkedin.png" alt="linkedin logo" width="30px"
+            height="30px" /> </a>
+        <a href="https://www.instagram.com/?hl=en"><img src="images/instagram.png" alt="instagram logo" width="30px"
+            height="30px" /> </a>
       </div>
     </div>
-<br>
-<br>
   </div>
-
-      <div id="footer">
-
-        <div id="col1">
-
-          <p>Designed by:<br><br>Dylan Murphy<br>Piyush Sharma<br>Matt<br>Ben<br>Keith</p>
-        </div>
-
-        <div id="col2">
-          <p class="none">Contact information: <a class="normal" href="mailto:DocConnect123@example.com">
-              drconnect123@gmail.com</a></br>
-            <a class="normal" href="tel:+123 123456789">089 8764383</a></p>
-        </div>
-        <div id="col3">
-          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo" width="30px"
-              height="30px" /> </a>
-          <a href="https://twitter.com/?lang=en"><img src="images/twitter.jpg" alt="twitter logo" width="30px"
-              height="30px" /> </a>
-          <a href="https://ie.linkedin.com/"><img src="images/linkedin.png" alt="linkedin logo" width="30px"
-              height="30px" /> </a>
-          <a href="https://www.instagram.com/?hl=en"><img src="images/instagram.png" alt="instagram logo" width="30px"
-              height="30px" /> </a>
-        </div>
-      </div>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
-    <script src="doctor.js"></script>
-    <script src="appointment.js"></script>
-    <script src="Logout.js"></script>
-
-
-
-
-
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+  <script src="doctor.js"></script>
+  <script src="appointment.js"></script>
+  <script src="Logout.js"></script>
 </body>
 
 </html>
