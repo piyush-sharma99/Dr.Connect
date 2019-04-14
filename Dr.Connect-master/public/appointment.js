@@ -19,7 +19,7 @@ var db = firebase.firestore();
 
 var currentUser = firebase.auth().currentUser;firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
-    useremail = user.email;
+    useremail = user.uid;
     db.collection("Doctor/" + useremail + "/Appointment").get().then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
         if (doc.exists) {
@@ -43,7 +43,7 @@ var currentUser = firebase.auth().currentUser;firebase.auth().onAuthStateChanged
 
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
-    useremail = user.email;
+    useremail = user.uid;
     db.collection("Doctor/" + useremail + "/Appointment").get().then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
         if (doc.data().Status == "Accepted") {

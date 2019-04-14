@@ -41,8 +41,20 @@ firebase.auth().onAuthStateChanged(function(user) {
           // No user is signed in.
         }
       });
-    
-    
+
+
+    function logout(){
+
+        firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+            console.log("logged out");
+          }).catch(function(error) {
+            // An error happened.
+            console.log("Error getting:", error);
+          });
+
+      }
+
       
 
 //const name = document.querySelector("#docname");
