@@ -16,11 +16,11 @@ var app_firebase = {};
 
 
 var db = firebase.firestore();
-
+let user = firebase.auth().currentUser;
 var currentUser = firebase.auth().currentUser;firebase.auth().onAuthStateChanged(function (user) {
-  if (user) {
-    useremail = user.uid;
-    db.collection("Doctor/" + useremail + "/Appointment").get().then(function (querySnapshot) {
+ /* if (user) {
+    
+    db.collection("Doctor/" + user.uid + "/Appointment").get().then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
         if (doc.exists) {
           // doc.data() is never undefined for query doc snapshots
@@ -40,13 +40,13 @@ var currentUser = firebase.auth().currentUser;firebase.auth().onAuthStateChanged
           listitem.innerHTML = "<div><p> There is no Current appointments to be accepted </p></div>";
   }
 });
-
+*/
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
-    useremail = user.uid;
-    db.collection("Doctor/" + useremail + "/Appointment").get().then(function (querySnapshot) {
+    
+    db.collection("Doctor/" + user.uid + "/Appointment").get().then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
-        if (doc.data().Status == "Accepted") {
+        if (doc.exists) {
           // doc.data() is never undefined for query doc snapshots
           var dateString = doc.data().Date.toDate();
           dateString = new Date(dateString).toUTCString();
@@ -54,7 +54,7 @@ firebase.auth().onAuthStateChanged(function (user) {
           console.log(dateString);
           console.log(doc.id, " => ", doc.data());
           const listitem1 = document.querySelector("#list-itemAccepted");
-          listitem1.innerHTML += "<div id='styling'><p>" + doc.data().Name + " " + dateString + "</p></div>";
+          listitem1.innerHTML += "<div id='styling'><p>" + doc.data().Name + " " + dateString + "<br> " + doc.data().Address + "</p></div>";
 
         }
       });
@@ -64,20 +64,4 @@ firebase.auth().onAuthStateChanged(function (user) {
           listitem1.innerHTML = "<div><p> There is no Current appointments to be accepted </p></div>";
   }
 });
-
-
-
-
-
-
-function Delete(){
-  
-  var Delete = document.getElementById(Delete_field).Value;
-
-  db.collection("Doctor/" + useremail + "/Appointment").doc(Delete).delete().then(function() {
-    console.log("Document successfully deleted!");
-}).catch(function(error) {
-    console.error("Error removing document: ", error);
-});
-
-};
+})
