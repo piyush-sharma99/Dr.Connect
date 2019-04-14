@@ -13,7 +13,7 @@ var db = firebase.firestore();
 	var inputMed3 = document.getElementById("med3_field").value;
 	var inputSum3= document.getElementById("Sum3_field").value;
 
-	db.collection("Prescription").doc(inputDocnum).set({
+	db.collection("Prescription").doc(inputPatID).set({
   patID: inputPatID,
 	docnum: inputDocnum,
 	med1: inputMed1,
