@@ -20,7 +20,7 @@ var closed = document.querySelector("#closed");
 function search(){
   var patientEmail = document.getElementById("patientEmail").value;
   console.log(patientEmail);
-  closed.innerHTML += "<div><p></div></p>"
+  
   db.collection("Patient").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         if(patientEmail == doc.data().PatientEmail){
@@ -29,9 +29,8 @@ function search(){
       
       
         }
-        else{
-          listitem.innerHTML = "<div><p>There is no Information on this patient available. Please type in a new user email!</p></div>";
-      }
+        
+        
     });
     
       
