@@ -21,28 +21,46 @@ var closed = document.querySelector("#closed");
 
 function search(){
   var patientEmail = document.getElementById("patientEmail").value;
-  console.log(patientEmail);
-  
+
   db.collection("Patient").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
-        if(doc.data().PatientEmail == patientEmail){
-          listitem.innerHTML = "<div><p>Patient Name: "+ doc.data().fName + " " + doc.data().lName + "<br><br> Patient Number:"+ doc.data().PatientNumber + "<br><br> Patient Email:  " + doc.data().PatientEmail + "<br><br> Patient Address: " + doc.data().PatientAddress + "<br><br> PatientID: " + doc.data().PatID +  "</p></div>";
-        console.log(doc.id, " => ", doc.data());
+        if(doc.data().PatientEmail !== patientEmail){
+          
+        
+        listitem.innerHTML = "<div><p>There seems to be no information on this patient. Please try another email!</p></div>";
+ 
+        
+              
+          
       
-      
+    
         }
+      
     });
     
       
     
 });
 
-
-
+console.log(patientEmail);
+      db.collection("Patient").get().then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            if(doc.data().PatientEmail === patientEmail){
+              
+            console.log(doc.id, " => ", doc.data());
+            listitem.innerHTML = "<div><p>Patient Name: "+ doc.data().fName + " " + doc.data().lName + "<br><br> Patient Number:"+ doc.data().PatientNumber + "<br><br> Patient Email:  " + doc.data().PatientEmail + "<br><br> Patient Address: " + doc.data().PatientAddress + "<br><br> PatientID: " + doc.data().PatID +  "</p></div>";
+            
+            
+    }
+      
+  });
   
-
-
+    
+  
+});
+      
 }
+
 
 
 
