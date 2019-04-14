@@ -31,25 +31,6 @@ function search(){
       
       
         }
-        
-        else  if( doc.data().PatientEmail != doc.data().PatientEmail){
-          listitem.innerHTML = "<div><p> There is no information on this patient available. Please try again!</p></div>"
-              
-          
-             
-               
-            
-            
-              
-              
-              
-          
-          
-            
-          
-        
-    
-        }
     });
     
       
