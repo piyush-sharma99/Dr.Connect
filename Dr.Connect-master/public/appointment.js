@@ -61,7 +61,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     });
   } else {
     const listitem1 = document.querySelector("#list-itemAccepted");
-          listitem1.innerHTML = "<div><p> There is no Current appointments to be accepted </p></div>";
+          listitem1.innerHTML = "<div><p> There are no Current appointments</p></div>";
   }
 });
 })
